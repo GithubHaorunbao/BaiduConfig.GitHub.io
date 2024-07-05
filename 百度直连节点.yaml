@@ -4,7 +4,7 @@ baidu: &baidu
   udp: false
   skip-cert-verify: true
   headers:
-    Host: h2tcbox.baidu.com:443
+    Host: "h2tcbox.baidu.com:443"
     X-T5-Auth: 1050504963
     With-At: m.toutiao.com
 
