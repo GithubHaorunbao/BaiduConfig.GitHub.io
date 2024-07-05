@@ -4,7 +4,7 @@ baidu: &baidu
   udp: false
   skip-cert-verify: true
   headers:
-    Host: cloudnproxy.baidu.com
+    Host: h2tcbox.baidu.com:443
     X-T5-Auth: 1050504963
     With-At: m.toutiao.com
 
@@ -19,4 +19,12 @@ proxies:
 
   - name: 🇨🇳 河北69
     server: 110.242.70.69
+    <<: *baidu
+    
+  - name: 🇨🇳 河北208
+    server: 110.242.69.208
+    <<: *baidu
+
+  - name: 🇨🇳 1571
+    server: 157.0.148.100
     <<: *baidu
