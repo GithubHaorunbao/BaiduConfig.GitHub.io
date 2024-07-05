@@ -4,7 +4,7 @@ baidu: &baidu
   udp: false
   skip-cert-verify: true
   headers:
-    Host: cloudnproxy.baidu.com
+    Host: pushbos.baidu.com
     X-T5-Auth: 1050504963
     With-At: m.toutiao.com
 
@@ -26,7 +26,7 @@ proxies:
     <<: *baidu
 
   - name: 🇨🇳 联通pushbos
-    server: pushbos.baidu.com
+    server: 211.93.20.48
     <<: *baidu
 
   - name: 🇨🇳 河北69
