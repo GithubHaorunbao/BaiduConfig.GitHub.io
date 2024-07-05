@@ -17,5 +17,5 @@ proxies:
     <<: *baidu
 
   - name: 🇨🇳 Baidu Auto
-    server: cloudnproxy.baidu.com
+    server: 14.215.182.75
     <<: *baidu
