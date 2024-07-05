@@ -5,26 +5,33 @@ baidu: &baidu
   skip-cert-verify: true
   headers:
     Host: "h2tcbox.baidu.com:443"
-    X-T5-Auth: 1050504963
-    With-At: m.toutiao.com
+    X-T5-Auth: "1966547082"
 
 proxies:
-  - name: 🇨🇳 河北68
-    server: 110.242.70.68
+  - name: "🐻 苏州"
+    server: 157.0.148.100
     <<: *baidu
 
-  - name: 🇨🇳 苏州157
-    server: 157.0.148.53
-    <<: *baidu
-
-  - name: 🇨🇳 河北69
-    server: 110.242.70.69
-    <<: *baidu
-    
-  - name: 🇨🇳 河北208
+  - name: "🐻 广州-1"
     server: 110.242.69.208
     <<: *baidu
 
-  - name: 🇨🇳 1571
-    server: 157.0.148.100
+  - name: "🐻 广州-2"
+    server: 163.177.17.6
+    <<: *baidu
+
+  - name: "🐻 河北-1"
+    server: 110.242.70.68
+    <<: *baidu
+
+  - name: "🐻 河北-2"
+    server: 110.242.70.69
+    <<: *baidu
+
+  - name: "🐻 南京"
+    server: 153.3.237.117
+    <<: *baidu
+
+  - name: "🐻 Domain"
+    server: cloudnproxy.baidu.com
     <<: *baidu
