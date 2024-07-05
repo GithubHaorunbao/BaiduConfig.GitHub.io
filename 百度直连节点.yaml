@@ -6,6 +6,7 @@ baidu: &baidu
   headers:
     Host: cloudnproxy.baidu.com
     X-T5-Auth: 1050504963
+    With-At: m.toutiao.com
 
 proxies:
   - name: 🇨🇳 河北68
@@ -16,10 +17,18 @@ proxies:
     server: 157.0.148.53
     <<: *baidu
 
-  - name: 🇨🇳 电信14
-    server: 14.215.182.75
+  - name: 🇨🇳 联通153
+    server: 153.3.236.22
     <<: *baidu
 
-  - name: 🇨🇳 移动183
-    server: 183.240.98.84
+  - name: 🇨🇳 联通cloudn
+    server: cloudnproxy.baidu.com
+    <<: *baidu
+
+  - name: 🇨🇳 联通pushbos
+    server: pushbos.baidu.com
+    <<: *baidu
+
+  - name: 🇨🇳 河北69
+    server: 110.242.70.69
     <<: *baidu
