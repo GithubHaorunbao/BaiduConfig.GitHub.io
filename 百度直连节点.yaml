@@ -2,26 +2,24 @@ baidu: &baidu
   type: http
   port: 443
   udp: false
-  ipv6: false
   skip-cert-verify: true
   headers:
-    Host: "h2tcbox.baidu.com:443"
-    X-T5-Auth: "1966547082"
-    With-At: "m.toutiao.com"
+    Host: cloudnproxy.baidu.com
+    X-T5-Auth: 1050504963
 
 proxies:
-  - name: "苏州"
-    server: 157.0.148.100
-    <<: *baidu
-
-  - name: "河北68"
+  - name: 🇨🇳 联通 河北68
     server: 110.242.70.68
     <<: *baidu
 
-  - name: "河北69"
+  - name: 🇨🇳 联通 河北69
     server: 110.242.70.69
     <<: *baidu
 
-  - name: "Domain"
+  - name: 🇨🇳 联通 南京
+    server: 153.3.237.117
+    <<: *baidu
+
+  - name: 🇨🇳 Baidu Auto
     server: cloudnproxy.baidu.com
     <<: *baidu
