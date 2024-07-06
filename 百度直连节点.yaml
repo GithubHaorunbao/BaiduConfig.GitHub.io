@@ -1,20 +1,20 @@
-addons: &addons
+baidu: &baidu
   type: http
   port: 443
+  skip-cert-verify: true
   headers:
-    X-T5-Auth: 683556433
-    Host: 153.3.236.22:443
-    User-Agent: baiduboxapp
+    Host: cloudnproxy.baidu.com
+    X-T5-Auth: 1050504963
+
 proxies:
-  - name: 🇨🇳苏州联通
-    server: 157.0.148.53
-    <<: *addons
-  - name: 🇨🇳保定联通69
-    server: 110.242.70.69
-    <<: *addons
-  - name: 🇨🇳保定联通68
+  - name: 🇨🇳 联通 河北68
     server: 110.242.70.68
-    <<: *addons   
-  - name: 🇨🇳江苏联通
-    server: 153.3.237.117
-    <<: *addons   
+    <<: *baidu
+
+  - name: 🇨🇳 联通 河北69
+    server: 110.242.70.69
+    <<: *baidu
+
+  - name: 🇨🇳 联通 江苏
+    server: 157.0.148.53
+    <<: *baidu
