@@ -4,16 +4,16 @@ baidu: &baidu
   udp: false
   skip-cert-verify: true
   headers:
-    Host: cloudnproxy.baidu.com
+    Host: pkg-ant.baidu.com:443
     X-T5-Auth: 1050504963
 
 proxies:
   - name: 🇨🇳 联通 河北68
-    server: 110.242.70.68
+    server: 112.34.112.210
     <<: *baidu
 
   - name: 🇨🇳 联通 河北69
-    server: 110.242.70.69
+    server: 110.242.69.225
     <<: *baidu
 
   - name: 🇨🇳 联通 苏州
