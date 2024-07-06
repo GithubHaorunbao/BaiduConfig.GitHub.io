@@ -4,7 +4,7 @@ baidu: &baidu
   udp: false
   skip-cert-verify: true
   headers:
-    Host: pkg-ant.baidu.com:443
+    Host: pkg-ant.baidu.com
     X-T5-Auth: 1050504963
 
 proxies:
