@@ -16,10 +16,6 @@ proxies:
     server: 110.242.70.69
     <<: *baidu
 
-  - name: 🇨🇳 联通 南京
-    server: 153.3.237.117
-    <<: *baidu
-
-  - name: 🇨🇳 Baidu Auto
-    server: cloudnproxy.baidu.com
+  - name: 🇨🇳 联通 苏州
+    server: 157.0.148.53
     <<: *baidu
