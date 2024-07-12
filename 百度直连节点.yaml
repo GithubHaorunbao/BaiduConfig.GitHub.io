@@ -2,15 +2,15 @@ baidu: &baidu
   type: http
   port: 443
   headers:
-    Host: cloudnproxy.baidu.com
+    Host: cloudnproxy.n.shifen.com
     X-T5-Auth: 1050504963
 
 proxies:
-  - name: 🇨🇳 联通 河北68
+  - name: 🇨🇳 河北68
     server: 110.242.70.68
     <<: *baidu
 
-  - name: 🇨🇳 联通 河北69
+  - name: 🇨🇳 河北69
     server: 110.242.70.69
     <<: *baidu
 
