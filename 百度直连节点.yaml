@@ -2,7 +2,7 @@ baidu: &baidu
   type: http
   port: 443
   headers:
-    Host: cloudnproxy.baidu.com
+    Host: 153.3.236.22
     X-T5-Auth: 1050504963
 
 proxies:
